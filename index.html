@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Website Navbar</title>
+    <script src="https://kit.fontawesome.com/7730da8218.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="nav-container">
@@ -20,14 +21,171 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-links">About Me</a></li>
-                <li><a href="#" class="nav-links">My Resume</a></li>
-                <li><a href="#" class="nav-links">Projects</a></li>
-                <li><a href="#" class="nav-links">Contact</a></li>
+                <li><a href="index.html" class="nav-links">About Me</a></li>
+                <li><a href="resume.html" class="nav-links">My Resume</a></li>
+                <li><a href="projects.html" class="nav-links">Projects</a></li>
+                <li><a href="contact.html" class="nav-links">Contact</a></li>
                 <li><a href="#" class="nav-links nav-links-btn">Sign Up</a></li>
             </ul>
         </nav>
     </div>
-    <script src="app.js"></script>
+    <div id = "about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/aboutme.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a junior at Syracuse University, pursuing a major in 
+                    Computer Science. My passion lies at the intersection of 
+                    technology and innovation, and I'm actively seeking oppportunites  
+                    to make a meaningful impact in the tech inductry. 
+                    Technology for me, is not just a field of study, it's a dynamic
+                    realm where creativity and logic intersect to shape the future. 
+                    I have an interest in various tech fields including program management, software 
+                    engineering, cybersecuirty, and artifical intelligence.  
+                    I am always open to networking and exploring opportunities
+                    to collaborate. If you're looking for a motivated and 
+                    adaptable junior with a passion for technology, I'd love to 
+                    connect with you.  Looking forward to the exiting journey ahead 
+                    and the chance to contribute to the ever-evolving landscape of 
+                    teachnology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span> Undergradate Research Assistant </span> <br> Skill 1</li>
+                            <li> <span> Web Development </span> <br> Skill 2</li>
+                            <li> <span> App Development </span> <br> Skill 3</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span> 2021 - Current </span> <br> UI/UX Design Training at ET Insitute </li>
+                            <li> <span> 2019 - 2021 </span> <br> Team Lead at StarApp LLC. </li>
+                            <li> <span> 2017 - 2019 </span> <br> UI/UX Design Executive at Coin Digital Ltd. </li>
+                            <li> <span> 2016 - 2017 </span> <br> Internship at ekart eCommerce. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span> 2016 </span> <br> UI/UX Design Training at ET Insitute</li>
+                            <li> <span> 2016 </span> <br> MBA from MIT Bangalore </li>
+                            <li> <span> 2014 </span> <br> BBA from ISM Bangalore </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------services------------- -->
+<div id = "services">
+    <div class = "container">
+        <h1 class = "sub-title"> My Services</h1>
+        <div class = "services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit ame, consectetur adipiscing elit.
+                    Sed nulla nibh, tincidunt sit amet spaien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit ame, consectetur adipiscing elit.
+                    Sed nulla nibh, tincidunt sit amet spaien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit ame, consectetur adipiscing elit.
+                    Sed nulla nibh, tincidunt sit amet spaien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio -------------->
+<div id="portfolio">
+    <div class="continer">
+        <h1 class = "sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/iupui.png" alt="">
+                <div class="layer">
+                    <h3>Brief Survey Paper</h3>
+                    <p>Survey Paper written to compare 3 Cryptographic Access 
+                        Control Systems, their methods, and combine their 
+                        strengths to make a more efficient model. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/navisafe.png" alt="">
+                <div class="layer">
+                    <h3>NaviSafe</h3> 
+                    </p> A way to address safe navigation when traveling, that
+                    ensures personal safety to help make informed
+                    decisions. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------------contact ------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>krverma@syr.edu</p>
+                <p><i class="fa-solid fa-phone"></i>(607)-280-0423</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kritikaaa.v/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/krverma107"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="img/resume-technical program manager internship.pdf" download class="btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kritika. Made with <i class="fa-regular fa-heart"></i>.</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
 </body>
 </html>
